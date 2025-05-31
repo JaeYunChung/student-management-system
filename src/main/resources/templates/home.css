@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a237e;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.services ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.services a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.services a:hover {
+    color: #ffd700;
+}
+
+.login-section button {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.student-info {
+    grid-column: 1 / 2;
+}
+
+.timetable {
+    grid-column: 2 / 3;
+}
+
+.notice-board, .university-intro {
+    grid-column: 1 / -1;
+}

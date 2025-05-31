@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FCM Token Fetch</title>
+</head>
+<body>
+<h1>getting app push token</h1>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"
+    import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-messaging.js"
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCob8l2WiuE6tt687ZGOCuxgYa-TFf3nbw",
+        authDomain: "student-service-project.firebaseapp.com",
+        projectId: "student-service-project",
+        storageBucket: "student-service-project.firebasestorage.app",
+        messagingSenderId: "375243585176",
+        appId: "1:375243585176:web:bd99fd8fd56ec8b369c2ed"
+    };
+
+    Notification.requestPermission().then(permission =>{
+        if (permission === 'granted'){
+            console.log('notification permission granted');
+        }
+    })
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const messaging = getMessaging(app);
+    getToken(messaging, {vapidKey: "BN-MuRldcNmYYgZzgb531iGbYy3h-Vb4h6yWHVkWRvnEOe1UsNPbyO582oDn1Ibim8PxP8qXzEaq9GE_9QsoIXw"}).then(currentToken => {
+        if (currentToken){
+            console.log("token: ", currentToken);
+        }
+        else{
+            console.log("유효한 토큰이 아닙니다.")
+        }
+
+    }).catch(err => {
+        console.log("error 발생 : ", err);
+    })
+</script>
+</body>
+</html>

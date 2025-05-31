@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리대학 - 학사정보시스템</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goHome()">
+            <h1><strong>우리대학</strong></h1>
+        </div>
+        <nav class="services">
+            <ul>
+                <li><a href="#" onclick="showService('성적')">성적</a></li>
+                <li><a href="#" onclick="showService('기숙사')">기숙사</a></li>
+                <li><a href="#" onclick="showService('수강신청')">수강신청</a></li>
+                <li><a href="#" onclick="showService('휴학신청')">휴학신청</a></li>
+                <li><a href="#" onclick="showService('장학')">장학</a></li>
+                <li><a href="#" onclick="showService('도서관')">도서관</a></li>
+                <li><a href="#" onclick="showService('졸업')">졸업</a></li>
+            </ul>
+        </nav>
+        <div class="login-section">
+            <button id="loginBtn">로그인</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="student-info">
+            <h2>학생 정보</h2>
+            <div id="studentDetails" class="hidden">
+                <p>학번: <span id="studentId"></span></p>
+                <p>이름: <span id="studentName"></span></p>
+                <p>학과: <span id="department"></span></p>
+                <p>학년: <span id="grade"></span></p>
+            </div>
+        </section>
+
+        <section class="timetable">
+            <h2>시간표</h2>
+            <div id="timetableContent"></div>
+        </section>
+
+        <section class="notice-board">
+            <h2>공지사항</h2>
+            <div id="noticeList"></div>
+        </section>
+
+        <section class="university-intro">
+            <h2>우리대학 소개</h2>
+            <div class="intro-content">
+                <p>우리대학은 최고의 교육과 연구 환경을 제공하는 글로벌 대학입니다.</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,12 @@
+insert into department (name, reg_cost, min_credit, option_required_course_min_credit, min_grade) values ('CyberSecurity', 5_000_000, 6, 3, 2.5);
+insert into dormitory_entity (cost, type, total_size, spare_size, num_of_apply, start_at, end_at) values (700_000, 'NAMJE', 100, 100, 0, '2025-03-20T10:00:00Z', '2025-03-25T10:00:00Z');
+insert into professor_entity (name, phone_number, birthday, appointment_date, department_id) values ('정재윤', '010-1234-5678', '2003-02-06T12:00:00Z', '2020-02-25T12:00:00Z', 1);
+insert into department_course_mapping (department_id, enter_year, course_name, type) values (1, 2025, '자료구조', 'REQUIRED');
+insert into department_course_mapping (department_id, enter_year, course_name, type) values (1, 2025, '데이터베이스', 'OPTION');
+insert into department_english_exam_mapping (department_id, type, score) values (1, 'TOEIC', 780);
+insert into department_english_exam_mapping (department_id, type, score) values (1, 'OPIC', 400);
+insert into department_english_exam_mapping (department_id, type, score) values (1, 'TOEFL', 480);
+insert into department_english_exam_mapping (department_id, type, score) values (1, 'IBT', 100);
+insert into book_entity (title, spare) values ('컴퓨터구조', 3);
+insert into role (role) values ('USER');
+insert into role (role) values ('ADMIN');

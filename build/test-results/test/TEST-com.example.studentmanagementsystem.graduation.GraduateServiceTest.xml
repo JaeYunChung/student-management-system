@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.studentmanagementsystem.graduation.GraduateServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-04-02T04:41:59" hostname="DESKTOP-RVR2Q59" time="0.296">
+  <properties/>
+  <testcase name="testGraduateStudentAndFalseByLowGrade()" classname="com.example.studentmanagementsystem.graduation.GraduateServiceTest" time="0.123"/>
+  <testcase name="testGraduateStudentAndTrue()" classname="com.example.studentmanagementsystem.graduation.GraduateServiceTest" time="0.095"/>
+  <testcase name="testGraduateStudentAndFalseByNotTakenRequiredCourses()" classname="com.example.studentmanagementsystem.graduation.GraduateServiceTest" time="0.076"/>
+  <system-out><![CDATA[2025-04-02T13:41:59.206+09:00  INFO 11140 --- [student-management-system] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.studentmanagementsystem.graduation.GraduateServiceTest]: GraduateServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-04-02T13:41:59.216+09:00  INFO 11140 --- [student-management-system] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.studentmanagementsystem.StudentManagementSystemApplication for test class com.example.studentmanagementsystem.graduation.GraduateServiceTest
+2025-04-02T13:41:59.321+09:00  INFO 11140 --- [student-management-system] [    Test worker] c.e.s.graduation.GraduateService         : 최소 점수를 만족시키지 않습니다.
+2025-04-02T13:41:59.493+09:00  INFO 11140 --- [student-management-system] [    Test worker] c.e.s.graduation.GraduateService         : 필수수강과목을 모두 수강하지 않았습니다.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

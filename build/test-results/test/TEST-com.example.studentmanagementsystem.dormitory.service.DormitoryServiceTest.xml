@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.studentmanagementsystem.dormitory.service.DormitoryServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-02T04:41:58" hostname="DESKTOP-RVR2Q59" time="0.022">
+  <properties/>
+  <testcase name="testRegisterDorm()" classname="com.example.studentmanagementsystem.dormitory.service.DormitoryServiceTest" time="0.022"/>
+  <system-out><![CDATA[2025-04-02T13:41:58.704+09:00  INFO 11140 --- [student-management-system] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.studentmanagementsystem.dormitory.service.DormitoryServiceTest]: DormitoryServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-04-02T13:41:58.714+09:00  INFO 11140 --- [student-management-system] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.studentmanagementsystem.StudentManagementSystemApplication for test class com.example.studentmanagementsystem.dormitory.service.DormitoryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
