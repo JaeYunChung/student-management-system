@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
@@ -21,5 +22,20 @@ public class ExamRepositoryImpl implements ExamRepository{
     @Override
     public List<ExamEntity> findByCourseAndStudent(CourseEntity course, StudentEntity student) {
         return jpaExamRepository.findByCourseAndStudent(course, student);
+    }
+
+    @Override
+    public Optional<ExamEntity> findById(Long id) {
+        return jpaExamRepository.findById(id);
+    }
+
+    @Override
+    public List<ExamEntity> findAll() {
+        return jpaExamRepository.findAll();
+    }
+
+    @Override
+    public void deleteAll() {
+        jpaExamRepository.deleteAll();
     }
 }

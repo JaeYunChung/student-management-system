@@ -1,6 +1,7 @@
 package com.example.studentmanagementsystem.grade;
 
 import com.example.studentmanagementsystem.course.entity.CourseEntity;
+import com.example.studentmanagementsystem.event.GradeEventListener;
 import com.example.studentmanagementsystem.member.domain.StudentEntity;
 import jakarta.persistence.*;
 import lombok.*;

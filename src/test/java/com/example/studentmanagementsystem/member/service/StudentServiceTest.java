@@ -71,6 +71,12 @@ class StudentServiceTest {
         courseRepository.deleteAll();
     }
 
+    @Test
+    @Transactional
+    void saveStudent(){
+        assertEquals(1, studentRepository.findAll().size());
+    }
+
 
     @Test
     @Transactional

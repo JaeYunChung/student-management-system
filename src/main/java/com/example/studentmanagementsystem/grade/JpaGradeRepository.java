@@ -10,5 +10,6 @@ import java.util.Optional;
 public interface JpaGradeRepository extends JpaRepository<GradeEntity, Long> {
     List<GradeEntity> findAllByStudent(StudentEntity student);
     List<GradeEntity> findAllByCourse(CourseEntity course);
-    GradeEntity findByCourseAndStudent(CourseEntity course, StudentEntity student);
+
+    Optional<GradeEntity> findByCourseAndStudent(CourseEntity course, StudentEntity student);
 }

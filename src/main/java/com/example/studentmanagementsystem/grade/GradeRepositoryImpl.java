@@ -36,7 +36,7 @@ public class GradeRepositoryImpl implements GradeRepository {
     }
 
     @Override
-    public GradeEntity findByCourseAndStudent(CourseEntity course, StudentEntity student) {
+    public Optional<GradeEntity> findByCourseAndStudent(CourseEntity course, StudentEntity student) {
         return jpaGradeRepository.findByCourseAndStudent(course, student);
     }
 
@@ -48,5 +48,10 @@ public class GradeRepositoryImpl implements GradeRepository {
     @Override
     public void deleteById(Long id) {
         jpaGradeRepository.deleteById(id);
+    }
+
+    @Override
+    public List<GradeEntity> findAll() {
+        return jpaGradeRepository.findAll();
     }
 }

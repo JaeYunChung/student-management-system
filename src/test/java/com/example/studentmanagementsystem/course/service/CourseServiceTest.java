@@ -68,6 +68,7 @@ class CourseServiceTest {
     void testCreateCourse(){
         CreateCourseDto dto = new CreateCourseDto("자료구조", "정재윤", 50, 3, "SPRING", "CyberSecurity");
         CourseEntity course = courseService.createCourse(dto);
+        course = courseRepository.findById(course.getId());
         assertEquals(50, course.getCourseSize());
         assertEquals("정재윤", course.getProfessor().getName());
     }

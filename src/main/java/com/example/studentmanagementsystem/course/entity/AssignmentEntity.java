@@ -1,5 +1,6 @@
 package com.example.studentmanagementsystem.course.entity;
 
+import com.example.studentmanagementsystem.member.domain.StudentEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,6 +21,10 @@ public class AssignmentEntity {
     @ManyToOne
     @JoinColumn(name = "course_id")
     private CourseEntity course;
+
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private StudentEntity student;
 
     private String contentUrl;
     private Instant createdAt;

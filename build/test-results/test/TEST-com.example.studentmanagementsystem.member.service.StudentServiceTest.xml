@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.studentmanagementsystem.member.service.StudentServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-02T04:41:59" hostname="DESKTOP-RVR2Q59" time="0.035">
-  <properties/>
-  <testcase name="testPromoteStudentForMidYear()" classname="com.example.studentmanagementsystem.member.service.StudentServiceTest" time="0.035"/>
-  <system-out><![CDATA[2025-04-02T13:41:59.731+09:00  INFO 11140 --- [student-management-system] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.studentmanagementsystem.member.service.StudentServiceTest]: StudentServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2025-04-02T13:41:59.733+09:00  INFO 11140 --- [student-management-system] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.studentmanagementsystem.StudentManagementSystemApplication for test class com.example.studentmanagementsystem.member.service.StudentServiceTest
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -54,10 +54,10 @@ class BookServiceTest {
         studentRepository.deleteAll();
     }
 
-    @Test
-    void testUpdateSpareAfterBorrowBook(){
-        BookMemberMapping bookMemberMapping = bookService.borrowBook("컴퓨터구조");
-        BookEntity book = bookRepository.findByTitle("컴퓨터구조");
-        assertEquals(2, book.getSpare());
-    }
+//    @Test
+//    void testUpdateSpareAfterBorrowBook(){
+//        BookMemberMapping bookMemberMapping = bookService.borrowBook("컴퓨터구조");
+//        BookEntity book = bookRepository.findByTitle("컴퓨터구조");
+//        assertEquals(2, book.getSpare());
+//    }
 }

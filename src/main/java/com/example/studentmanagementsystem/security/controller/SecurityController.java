@@ -25,7 +25,7 @@ public class SecurityController {
         Member member = new Member(dto.email(), dto.password());
         Role role = roleService.findByRole("USER");
         MemberRoleMapping mapping = new MemberRoleMapping(member, role);
-        member.appendRole(mapping);
+        //member.appendRole(mapping);
         Member returnValue = memberService.saveMember(member);
         return ResponseEntity.status(HttpStatus.OK)
                 .body(returnValue);
