@@ -31,7 +31,7 @@ public class ExamService {
         if (entity.getId() == null) {
             log.info("enitty가 null입니다.");
         }
-        eventPublisher.publishEvent(entity);
+        eventPublisher.publishEvent(new EventCreateEntity(entity));
         return entity;
     }
 }

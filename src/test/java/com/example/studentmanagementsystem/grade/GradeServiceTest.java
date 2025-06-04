@@ -133,6 +133,14 @@ class GradeServiceTest {
     }
 
     @Test
+    void testExamEventCreatesGrade(){
+        examService.createExamEntity(course, student, 80.0, 40);
+        Optional<GradeEntity> grade = gradeRepository.findByCourseAndStudent(course, student);
+        assertTrue(grade.isPresent());
+        assertEquals(32.0, grade.get().getGrade());
+    }
+
+    @Test
     @Transactional
     void testCreateGradeAndUpdateGrade() {
 
