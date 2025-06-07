@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기숙사 신청</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+<body>
+<h1>기숙사 신청</h1>
+<section>
+    <h2>기숙사 등록</h2>
+    <form id="dormRegForm">
+        <label>
+            학생 ID:
+            <input type="number" name="studentId" required>
+        </label>
+        <label>
+            유형:
+            <select name="type">
+                <option value="NAMJE">남제관</option>
+                <option value="YEOJA">여자관</option>
+            </select>
+        </label>
+        <button type="submit">신청</button>
+    </form>
+</section>
+<section>
+    <h2>기숙사 생성</h2>
+    <form id="createDormForm">
+        <label>
+            비용:
+            <input type="number" name="cost" required>
+        </label>
+        <label>
+            유형:
+            <select name="type">
+                <option value="NAMJE">남제관</option>
+                <option value="YEOJA">여자관</option>
+            </select>
+        </label>
+        <label>
+            수용 인원:
+            <input type="number" name="size" required>
+        </label>
+        <label>
+            시작 날짜:
+            <input type="date" name="startAt" required>
+        </label>
+        <button type="submit">생성</button>
+    </form>
+</section>
+<script src="/dormitory.js"></script>
+</body>
+</html>
