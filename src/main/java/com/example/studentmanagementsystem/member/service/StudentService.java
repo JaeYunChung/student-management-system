@@ -13,6 +13,7 @@ import com.example.studentmanagementsystem.member.domain.StudentEntity;
 import com.example.studentmanagementsystem.member.dto.CreateStudentDto;
 import com.example.studentmanagementsystem.member.repository.DepartmentRepository;
 import com.example.studentmanagementsystem.member.repository.StudentRepository;
+import com.example.studentmanagementsystem.security.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -141,6 +142,12 @@ public class StudentService {
                 .sum();
         student.setTotalCredit(totalCredit);
         return totalCredit;
+    }
+
+    @Transactional(readOnly = true)
+    public Student findByMember(Member member){
+        StudentEntity entity = studentRepository.findByMember(member);
+        return entity.toStudent();
     }
 
 }

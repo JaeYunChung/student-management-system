@@ -3,6 +3,7 @@ package com.example.studentmanagementsystem.member.repository;
 import com.example.studentmanagementsystem.course.entity.CourseEntity;
 import com.example.studentmanagementsystem.member.Student;
 import com.example.studentmanagementsystem.member.domain.StudentEntity;
+import com.example.studentmanagementsystem.security.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
@@ -38,6 +39,11 @@ public class StudentRepositoryImpl implements StudentRepository{
     public StudentEntity findById(Long id) {
         return jpaStudentRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("해당 학생이 존재하지 않습니다."));
+    }
+
+    @Override
+    public StudentEntity findByMember(Member member) {
+        return jpaStudentRepository.findByMember(member);
     }
 
     @Override

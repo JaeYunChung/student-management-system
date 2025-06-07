@@ -17,4 +17,14 @@ public class ViewController {
     public String getSignUpView(){
         return "signup";
     }
+
+    @GetMapping("/dormitory")
+    public String getDormitoryView(){
+        return "dormitory";
+    }
+
+    @GetMapping("/library")
+    public String getLibraryView(){
+        return "library";
+    }
 }
